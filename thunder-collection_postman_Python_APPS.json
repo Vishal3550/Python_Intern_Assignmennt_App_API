@@ -1,0 +1,84 @@
+{
+    "info": {
+        "_postman_id": "21c8dc60-cdc0-49c5-bc38-0e31b4f8483d",
+        "name": "Python_APPS",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Delete App",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/delete-app/3",
+                    "path": [
+                        "api",
+                        "delete-app",
+                        "3"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "Get App",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/get-app/3",
+                    "path": [
+                        "api",
+                        "get-app",
+                        "3"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "add app",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/add-app",
+                    "path": [
+                        "api",
+                        "add-app"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n    \"app_name\": \"vishal 2 App\",\r\n    \"version\": \"2.0\",\r\n    \"description\": \"This is a vishal 2kkkfdkdkapp.\"\r\n}\r\n"
+                }
+            }
+        }
+    ]
+}
